@@ -135,9 +135,10 @@ export default function Sidebar({ currentUser }) {
   return (
     <aside className="sidebar" ref={sidebarRef} style={{ overflowY: 'auto' }}>
       <div className="sidebar-header" style={{ position: 'sticky', top: 0, background: 'rgba(11, 13, 20, 0.95)', backdropFilter: 'blur(10px)', zIndex: 10, display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '12px 16px', borderBottom: '1px solid rgba(255, 255, 255, 0.08)' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <img src="/schollygo-logo.png" alt="SchollyGO" style={{ height: '30px', width: 'auto', objectFit: 'contain' }} />
-          <span style={{ fontSize: '10px', fontWeight: 700, background: 'rgba(250, 197, 44, 0.15)', color: '#FAC52C', border: '1px solid rgba(250, 197, 44, 0.3)', padding: '2px 6px', borderRadius: '4px', letterSpacing: '0.5px' }}>ERP</span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <img src="/schollygo-logo-transparent.png" alt="SchollyGO" style={{ height: '28px', width: 'auto', objectFit: 'contain' }} />
+          <div style={{ height: '20px', width: '2px', background: 'rgba(255,255,255,0.15)' }}></div>
+          <span style={{ fontSize: '16px', fontWeight: 800, color: '#FFC72C', letterSpacing: '1px' }}>ERP</span>
         </div>
       </div>
       

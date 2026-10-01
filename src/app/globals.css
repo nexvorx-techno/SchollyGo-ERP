@@ -349,3 +349,62 @@ tr:hover td {
   flex: 1;
   min-width: 200px;
 }
+
+/* Login Card Hover Effect */
+.login-hover-card {
+  transition: all 0.3s ease-out;
+}
+
+.login-hover-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px -5px rgba(255, 199, 44, 0.15) !important;
+  border-color: #ffc72c !important;
+  background: #1a1e27 !important; /* Slightly brighten interior */
+}
+
+/* Custom Dark Checkbox */
+.dark-checkbox {
+  appearance: none;
+  background-color: rgba(255, 255, 255, 0.05);
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.dark-checkbox::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #111827;
+  background-color: #111827;
+  transform-origin: center;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.dark-checkbox:checked {
+  background-color: #FFC72C;
+  border-color: #FFC72C;
+}
+
+.dark-checkbox:checked::before {
+  transform: scale(1);
+}
+
+/* School Logo Hover Effect */
+.school-logo-hover {
+  transform: rotate(-5deg);
+  transition: all 0.4s ease;
+}
+.school-logo-hover:hover {
+  transform: rotate(0deg) scale(1.05);
+}

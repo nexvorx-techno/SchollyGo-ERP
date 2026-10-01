@@ -5,6 +5,7 @@ import { cookies } from 'next/headers';
 import {
   Bell,
   LogOut,
+  Keyboard
 } from 'lucide-react';
 import { redirect } from 'next/navigation';
 import SessionSelector from '@/components/SessionSelector';
@@ -16,7 +17,7 @@ import GlobalShortcuts from '@/components/GlobalShortcuts';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'SchollyGO ERP',
+  title: 'SchollyGo | ERP',
   description: 'Enterprise School Management System',
 };
 
@@ -90,6 +91,12 @@ export default async function RootLayout({ children }) {
             <header className="topbar">
               <div className="topbar-search">
                 <SessionSelector />
+              </div>
+              
+              <div style={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)', display: 'flex', gap: '16px', color: 'var(--text-secondary)', fontSize: '13px', opacity: 0.7 }}>
+                <span><kbd style={{ background: '#eef2f5', padding: '2px 6px', borderRadius: '4px', border: '1px solid #d1d5db', marginRight: '4px', color: '#374151', fontFamily: 'monospace' }}>Alt+O</kbd> Quick Search</span>
+                <span><kbd style={{ background: '#eef2f5', padding: '2px 6px', borderRadius: '4px', border: '1px solid #d1d5db', marginRight: '4px', color: '#374151', fontFamily: 'monospace' }}>Alt+C</kbd> Create New</span>
+                <span><kbd style={{ background: '#eef2f5', padding: '2px 6px', borderRadius: '4px', border: '1px solid #d1d5db', marginRight: '4px', color: '#374151', fontFamily: 'monospace' }}>Esc</kbd> Close</span>
               </div>
               <div className="topbar-profile" style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                 <RefreshButton />
