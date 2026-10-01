@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <defs>
+    <style>
+      .logo-text {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Montserrat', sans-serif;
+        font-size: 52px;
+        font-weight: 900;
+        fill: #FAC52C;
+        letter-spacing: -1.5px;
+      }
+    </style>
+  </defs>
+  <!-- Background (can be transparent or #161822) -->
+  <!-- "sch" -->
+  <text x="10" y="58" class="logo-text">sch</text>
+  
+  <!-- 'o' with book icon -->
+  <g transform="translate(116, 42)">
+    <circle cx="0" cy="0" r="22" fill="#FAC52C" />
+    <!-- Book symbol inside cutout -->
+    <path d="M-10,-5 C-6,-8 -2,-7 0,-5 C2,-7 6,-8 10,-5 L10,6 C6,3 2,4 0,6 C-2,4 -6,3 -10,6 Z" fill="#161822" />
+    <path d="M0,-5 L0,6" stroke="#FAC52C" stroke-width="1.5" />
+  </g>
+
+  <!-- "llyg" -->
+  <text x="144" y="58" class="logo-text">llyg</text>
+
+  <!-- 'o' with play icon -->
+  <g transform="translate(268, 42)">
+    <circle cx="0" cy="0" r="22" fill="#FAC52C" />
+    <!-- Play button triangle cutout -->
+    <polygon points="-4,-9 8,0 -4,9" fill="#161822" />
+  </g>
+</svg>

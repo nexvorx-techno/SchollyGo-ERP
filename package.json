@@ -1,0 +1,63 @@
+{
+  "name": "schollygo-erp",
+  "version": "0.1.0",
+  "main": "main.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "electron:dev": "concurrently \"npm run dev\" \"wait-on http://localhost:3000 && electron .\"",
+    "build:exe": "next build && electron-builder -w"
+  },
+  "build": {
+    "appId": "com.schollygo.erp",
+    "productName": "SchollyGO ERP",
+    "directories": {
+      "output": "dist"
+    },
+    "asar": false,
+    "files": [
+      "main.js",
+      "package.json",
+      "src/lib/db.js",
+      ".next/**/*",
+      "public/**/*",
+      "node_modules/**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "public/logo.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "electron-is-dev": "^3.0.1",
+    "lucide-react": "^1.33.0",
+    "mysql2": "^3.24.2",
+    "next": "16.3.2",
+    "nodemailer": "^10.0.0",
+    "pdfkit": "^0.20.2",
+    "razorpay": "^2.9.8",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "react-easy-crop": "^6.2.3",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^6.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "concurrently": "^10.0.5",
+    "electron": "^44.0.0",
+    "electron-builder": "^26.15.3",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.2",
+    "tailwindcss": "^4",
+    "wait-on": "^9.1.0"
+  }
+}

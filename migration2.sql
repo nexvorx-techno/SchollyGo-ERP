@@ -1,0 +1,4 @@
+ALTER TABLE students ADD COLUMN religion TEXT;
+ALTER TABLE students ADD COLUMN mother_tongue TEXT;
+ALTER TABLE students ADD COLUMN rte_student BOOLEAN DEFAULT 0;
+ALTER TABLE students ADD COLUMN ews_student BOOLEAN DEFAULT 0;
