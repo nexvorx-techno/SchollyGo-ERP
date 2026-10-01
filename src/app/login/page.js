@@ -52,8 +52,9 @@ export default async function LoginPage({ searchParams }) {
   }
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', width: '100%', alignItems: 'center', justifyContent: 'center', padding: '40px 0' }}>
-      <div style={{ display: 'flex', width: '100%', maxWidth: '1060px', margin: '0 auto', alignItems: 'stretch', gap: '64px', flexWrap: 'wrap', justifyContent: 'center' }}>
+    <div className="login-page-container">
+      {/* Main Content Area */}
+      <div style={{ position: 'relative', zIndex: 10, display: 'flex', width: '100%', maxWidth: '1060px', margin: '0 auto', alignItems: 'stretch', gap: '64px', flexWrap: 'wrap', justifyContent: 'center' }}>
 
         {/* Left Side: School Profile */}
         <div style={{

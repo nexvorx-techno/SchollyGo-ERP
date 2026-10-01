@@ -408,3 +408,21 @@ tr:hover td {
 .school-logo-hover:hover {
   transform: rotate(0deg) scale(1.05);
 }
+
+/* Premium Login Page Pattern Background */
+.login-page-container {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  
+  /* Use the exact SchollyGo texture SVG which has its own #0b0d14 background baked in */
+  background-image: url("/bg-texture.svg");
+  background-repeat: repeat;
+  background-size: 240px;
+  overflow: hidden;
+}
